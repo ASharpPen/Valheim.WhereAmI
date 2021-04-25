@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31205.134
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Valheim.WhereAmI", "Valheim.WhereAmI\Valheim.WhereAmI.csproj", "{9BEC6429-99EF-4705-B890-E77DDB0B8DD7}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9BEC6429-99EF-4705-B890-E77DDB0B8DD7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9BEC6429-99EF-4705-B890-E77DDB0B8DD7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9BEC6429-99EF-4705-B890-E77DDB0B8DD7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9BEC6429-99EF-4705-B890-E77DDB0B8DD7}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {738C5956-AFB4-4ED3-AE14-2D1284B73CD9}
+	EndGlobalSection
+EndGlobal
