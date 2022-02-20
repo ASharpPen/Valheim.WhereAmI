@@ -19,4 +19,7 @@ Intended to help out players with regards to configuration for [Spawn That](http
 For multiplayer, this needs to be done on both client and server, since Location is not present client-side in that scenario.
 
 # Changelog:
-- v0.1.0: 
+- v1.0.1
+  - Updated to use Spawn That API.
+- v1.0.0: 
+  - Initial release
