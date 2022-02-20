@@ -9,9 +9,10 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>Valheim.WhereAmI</RootNamespace>
     <AssemblyName>Valheim.WhereAmI</AssemblyName>
-    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <Deterministic>true</Deterministic>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -71,24 +72,21 @@
     <Reference Include="UnityEngine.UI">
       <HintPath>..\..\LibsStripped\UnityEngine.UI.dll</HintPath>
     </Reference>
+    <Reference Include="Valheim.SpawnThat, Version=1.0.3.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Valheim.SpawnThat.1.0.3\lib\net48\Valheim.SpawnThat.dll</HintPath>
+    </Reference>
+    <Reference Include="YamlDotNet, Version=11.0.0.0, Culture=neutral, PublicKeyToken=ec19458f3c15af5e, processorArchitecture=MSIL">
+      <HintPath>..\packages\YamlDotNet.11.2.1\lib\net45\YamlDotNet.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Dungeon\DungeonGeneratorPatch.cs" />
-    <Compile Include="Dungeon\IHaveVector3.cs" />
-    <Compile Include="Dungeon\IPoint.cs" />
-    <Compile Include="Dungeon\RoomCache.cs" />
-    <Compile Include="Dungeon\SearchSpatial.cs" />
-    <Compile Include="Dungeon\SpatialListExtensions.cs" />
     <Compile Include="HudPatch.cs" />
-    <Compile Include="Location\SimpleLocation.cs" />
-    <Compile Include="Location\LocationService.cs" />
-    <Compile Include="Location\MultiplayerLocationService.cs" />
     <Compile Include="Log.cs" />
-    <Compile Include="Startup\StateResetter.cs" />
-    <Compile Include="Startup\WorldStartupResetPatch.cs" />
     <Compile Include="WhereAmIPlugin.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
