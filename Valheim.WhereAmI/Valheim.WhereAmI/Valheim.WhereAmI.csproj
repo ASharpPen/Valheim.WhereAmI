@@ -72,8 +72,8 @@
     <Reference Include="UnityEngine.UI">
       <HintPath>..\..\LibsStripped\UnityEngine.UI.dll</HintPath>
     </Reference>
-    <Reference Include="Valheim.SpawnThat, Version=1.0.3.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Valheim.SpawnThat.1.0.3\lib\net48\Valheim.SpawnThat.dll</HintPath>
+    <Reference Include="Valheim.SpawnThat, Version=1.1.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Valheim.SpawnThat.1.1.0\lib\net48\Valheim.SpawnThat.dll</HintPath>
     </Reference>
     <Reference Include="YamlDotNet, Version=11.0.0.0, Culture=neutral, PublicKeyToken=ec19458f3c15af5e, processorArchitecture=MSIL">
       <HintPath>..\packages\YamlDotNet.11.2.1\lib\net45\YamlDotNet.dll</HintPath>

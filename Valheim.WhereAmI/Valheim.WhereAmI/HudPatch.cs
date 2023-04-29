@@ -1,4 +1,5 @@
 ﻿using HarmonyLib;
+using SpawnThat.Utilities.Extensions;
 using System.Linq;
 using UnityEngine;
 using UnityEngine.UI;
@@ -76,12 +77,28 @@ public class HudPatch
                 roomName = roomName.Split(new[] { '(' }).First();
             }
 
+            var zone = SpawnThat.World.Zone.ZoneManager.GetZone(playerPos.GetZoneId());
+
             Text text = HudGameObject.GetComponent<Text>();
             string hud =
                 $"Position: {playerPos}\n" +
-                $"Biome: {EnvMan.instance.GetBiome().ToString()}\n" +
+                $"Biome: {EnvMan.instance.GetBiome()}\n" +
                 $"Location: {locationName?.LocationName ?? "---"}\n" +
-                $"Room: {roomName}";
+                $"Room: {roomName}\n" +
+                $"Zone ID: {playerPos.GetZoneId()}\n"
+                ;
+
+
+
+            // Additional Debugging:
+
+            hud +=
+                $"Zone Biome: {zone.Biome}\n" +
+                $"Zone Calc Biome: {zone.GetBiome(playerPos)}\n" +
+                $"Zone Corners: {zone.BiomeCorners.Join()}\n" +
+                $"World Biome for player: {WorldGenerator.instance.GetBiome(playerPos)}\n" +
+                $"World Biome for zone: {WorldGenerator.instance.GetBiome(zone.ZonePos)}\n"
+                ;
 
             text.text = hud;
         }
