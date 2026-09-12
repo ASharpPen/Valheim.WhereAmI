@@ -4,7 +4,7 @@ using HarmonyLib;
 
 namespace Valheim.WhereAmI
 {
-    [BepInPlugin("asharppen.valheim.where_am_i", "Where Am I", "1.0.1")]
+    [BepInPlugin("asharppen.valheim.where_am_i", "Where Am I", "1.0.2")]
     public class WhereAmIPlugin : BaseUnityPlugin
     {
         // Awake is called once when both the game and the plug-in are loaded
